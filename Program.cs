@@ -18,11 +18,11 @@ namespace ConsoleApp5
             //int count = 0;
             //foreach (var el in omas) 
             //{
-                //if (el==5)
-                            //{count++;}
+            //    if (el==5)
+            //                {count++;}
             //}
             //Console.WriteLine(count);
-            int count=omas.Count(x=>x==5)
+            int count=omas.Count(x=>x==5);
             Console.WriteLine(count);
             Console.ReadKey();
 
