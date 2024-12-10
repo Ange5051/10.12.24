@@ -15,12 +15,14 @@ namespace ConsoleApp5
         static void Main(string[] args)
         {
             int [] omas={5,7,1,9,5,3,6,5,5};
-            int count = 0;
-            foreach (var el in omas) 
-            {
-                if (el==5)
-                            {count++;}
-            }
+            //int count = 0;
+            //foreach (var el in omas) 
+            //{
+                //if (el==5)
+                            //{count++;}
+            //}
+            //Console.WriteLine(count);
+            int count=omas.Count(x=>x==5)
             Console.WriteLine(count);
             Console.ReadKey();
 
