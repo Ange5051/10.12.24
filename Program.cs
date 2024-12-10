@@ -4,28 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp5
+namespace ConsoleApp6
 {
     class Program
     {
         /// <summary>
-        /// Подсчитать колличество числа со значением 5 в одномерном масиве
+        /// Удалить все чотные элементы из одномерного масива
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            int [] omas={5,7,1,9,5,3,6,5,5};
-            //int count = 0;
-            //foreach (var el in omas) 
-            //{
-            //    if (el==5)
-            //                {count++;}
-            //}
-            //Console.WriteLine(count);
-            int count=omas.Count(x=>x==5);
-            Console.WriteLine(count);
+            int[] omas = { 5, 7, 1, 9, 5, 6, 3, 5, 4};
+            omas=omas.Where(x=>x%2!=0). ToArray();
+            foreach (var el in omas)
+            {
+                Console.Write($"{el}\t");
+            }
             Console.ReadKey();
-
         }
     }
 }
