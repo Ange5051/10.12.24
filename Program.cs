@@ -8,9 +8,12 @@ namespace ConsoleApp4
 {
     class Program
     {
+        /// <summary>
+        ///Отсортировать одномерный масив по возрастанию и по убыванию
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
-            //Отсортировать одномерный масив по возрастанию и по убыванию
             string[] people = { "Tom", "Sam", "Bob", "Kate", "Tom", "Alice" };
             Array.Sort(people);
             foreach (var el in people)
